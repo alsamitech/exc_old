@@ -12,3 +12,11 @@ double powd(double baseDec, double powDec) {
   }
   return resd;
 }
+
+float powf(float basex, float powx) {
+  double resf = 1;
+  for (int fi = 0; fi < powx; fi++:) {
+    resf = resf*basex;
+  }
+  return resf;
+}

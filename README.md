@@ -8,6 +8,11 @@ the **standard** version of this libarary already contains `stdio.h` and `stdlib
 other notes about the standard version of the library:
 to include the entire library, include `exc.h`. That will include all files in the standard version of the libarary.
 
-This Library contains **All Acsess Variables**
+This Library contains **All Acsess Variables (AAVs)**
+All acseess variabes are where some of the results are stored if they cannot be returned for some reason or another. Here is an example:
+```
+exampleAdd("10, 20")
+int ExampleResult = ExampleAAV
+```
 
 [![Run on Repl.it](https://repl.it/badge/github/alsamitech/exc)](https://repl.it/github/alsamitech/exc)
