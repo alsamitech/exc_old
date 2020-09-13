@@ -18,6 +18,6 @@ char *inputString(FILE* fp, size_t size){
 
     return realloc(str, sizeof(char)*len);
 }
-char[] sget() {
-  return scanf("%[^\n]", sget);
+void println(char sr[]) {
+  printf("%s\n", sr);
 }
