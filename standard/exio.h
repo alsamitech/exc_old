@@ -21,3 +21,13 @@ char *inputString(FILE* fp, size_t size){
 void println(char sr[]) {
   printf("%s\n", sr);
 }
+void spam(char spamp[]) {
+  while(1) {
+    printf("%s\n", spamp);
+  }
+}
+void dspam(char dpi[]) {
+  while(1) {
+    printf("%s", dpi);
+  }
+}
