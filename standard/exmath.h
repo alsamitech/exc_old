@@ -20,3 +20,12 @@ float powf(float basex, float powx) {
   }
   return resf;
 }
+
+int ipw;
+void ipw(int baseyu, int powyu) {
+  int resl = 1;
+  for (int i = 0; i < powyu; i++;) {
+    resl = resl * baseyu;
+  }
+  ipw = resl;
+}
