@@ -1,3 +1,6 @@
+#ifndef EXIO_H
+#define EXIO_H
+
 #include <stdio.h>
 
 char *inputString(FILE* fp, size_t size){
@@ -31,3 +34,5 @@ void dspam(char dpi[]) {
     printf("%s", dpi);
   }
 }
+
+#endif

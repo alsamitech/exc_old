@@ -1,3 +1,6 @@
+#ifndef EXMATH_H
+#define EXMATH_H
+
 int power(int baseNum, int powNum) {
   int result = 1;
   for (int i = 0; i < powNum; i++) {
@@ -33,3 +36,4 @@ void ipw(int baseyu, int powyu) {
 /*template <class FNUM_SMB, class SNUM_SMB>
 FNUM_SMB smaller(FNUM_SMB FIRSTCMP_00, SNUM_SMB SECMP_00) {return(FIRSTCMP_00 < SECMP_00? FIRSTCMP_00:SECMP_00);}
 FNUM_SMB larger(FNUM_SMB FIRSTCMP_01, SNUM_SMB SECMP_01) {return(FIRSTCMP_01 > SECMP_01? FIRSTCMP_01:SECMP_01);}*/
+#endif
