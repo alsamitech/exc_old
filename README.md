@@ -1,4 +1,5 @@
-# exC - Extended C libraries
+# NOTE FROM AUTHOR: THE LIBRARY IS BEING REWRITTEN. THIS IS THE LAST COMMIT TO THE CORSS-PLATFORM Version.
+## exC - Extended C libraries
 
 **These libraries bring extra functionality to the already useful C standard libraries.**
 This is free to use for everyone.
