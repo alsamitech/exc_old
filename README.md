@@ -1,17 +1,9 @@
 # exC - Extended C libraries
+*By Sami Alameddine et al.*
 
-**These libraries bring extra functionality to the already useful C standard libraries.**
-This is free to use for everyone.
+The exc libraries provide functions that would be otherwise boilerplate. the `std/` directory contains cross-platform code. while the `posix/` directory contains code that is exclusive to operating systems that confirm to the POSIX specification.
 
-notes about the standard version of the library:
-to include the entire library, include `exc.h`. That will include all files in the standard version of the libarary.
-
-This Library contains **All Acsess Variables (AAVs)**
-All acseess variabes are where some of the results are stored if they cannot be returned for some reason or another. Here is an example:
-```
-exampleAdd("10, 20")
-int ExampleResult = ExampleAAV
-```
+Further documentation will be available in the future.
 
 This project is liscensed under the EXPAT (MIT) Liscnese
 
