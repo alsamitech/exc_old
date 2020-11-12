@@ -3,6 +3,11 @@
 
 The exc libraries provide functions that would be otherwise boilerplate. the `std/` directory contains cross-platform code. while the `posix/` directory contains code that is exclusive to operating systems that confirm to the POSIX specification.
 
+## Dependencies
+* sys/
+* pthread.h (-lpthread)
+* In the future, X11 (-lX11)
+
 Further documentation will be available in the future.
 
 This project is liscensed under the EXPAT (MIT) Liscnese
