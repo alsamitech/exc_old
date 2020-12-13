@@ -2,6 +2,7 @@
 #define EXIO_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
 char *inputString(FILE* fp, size_t size){
 //The size is extended by the input with the value of the provisional
@@ -21,18 +22,26 @@ char *inputString(FILE* fp, size_t size){
 
     return realloc(str, sizeof(char)*len);
 }
-void println(char sr[]) {
-  printf("%s\n", sr);
+
+char* read_from_file(){
+	char* buffer=0;
+	long length;
+	FILE* f=fopen(filename, "rb");
+	if(f){
+		fseek(f, 0, SEEK_END);
+		length=ftell(f);
+		fseek(f, 0, SEEK_SET);
+		buffer=calloc(length, length);
+
+		if(buffer)
+			fread(buffer, 1, length, f);
+
+		fclose(f);
+	}
+
+	return buffer;
 }
-void spam(char spamp[]) {
-  while(1) {
-    printf("%s\n", spamp);
-  }
-}
-void dspam(char dpi[]) {
-  while(1) {
-    printf("%s", dpi);
-  }
-}
+
+
 
 #endif
